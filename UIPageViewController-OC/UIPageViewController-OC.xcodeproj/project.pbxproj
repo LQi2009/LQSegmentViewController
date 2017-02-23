@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		911DA6D81E5ED93F00CECD06 /* LDSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 911DA6D61E5ED93F00CECD06 /* LDSegmentView.m */; };
 		9197E4E11E568CC3000E7344 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9197E4E01E568CC3000E7344 /* main.m */; };
 		9197E4E41E568CC3000E7344 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9197E4E31E568CC3000E7344 /* AppDelegate.m */; };
 		9197E4E71E568CC3000E7344 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9197E4E61E568CC3000E7344 /* ViewController.m */; };
@@ -16,8 +17,6 @@
 		9197E4FA1E568CC4000E7344 /* UIPageViewController_OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9197E4F91E568CC4000E7344 /* UIPageViewController_OCUITests.m */; };
 		9197E5061E569359000E7344 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9197E5051E569359000E7344 /* ContentViewController.m */; };
 		9197E50F1E56F522000E7344 /* LDSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9197E50E1E56F522000E7344 /* LDSegmentViewController.m */; };
-		9197E5121E56F541000E7344 /* LDSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9197E5111E56F541000E7344 /* LDSegmentView.m */; };
-		9197E5151E57FE56000E7344 /* LDSegmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9197E5141E57FE56000E7344 /* LDSegmentCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		911DA6D51E5ED93F00CECD06 /* LDSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDSegmentView.h; sourceTree = "<group>"; };
+		911DA6D61E5ED93F00CECD06 /* LDSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDSegmentView.m; sourceTree = "<group>"; };
 		9197E4DC1E568CC3000E7344 /* UIPageViewController-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIPageViewController-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9197E4E01E568CC3000E7344 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9197E4E21E568CC3000E7344 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,11 +49,6 @@
 		9197E5051E569359000E7344 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
 		9197E50D1E56F522000E7344 /* LDSegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDSegmentViewController.h; sourceTree = "<group>"; };
 		9197E50E1E56F522000E7344 /* LDSegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDSegmentViewController.m; sourceTree = "<group>"; };
-		9197E5101E56F541000E7344 /* LDSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDSegmentView.h; sourceTree = "<group>"; };
-		9197E5111E56F541000E7344 /* LDSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDSegmentView.m; sourceTree = "<group>"; };
-		9197E5131E57FE56000E7344 /* LDSegmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDSegmentCell.h; sourceTree = "<group>"; };
-		9197E5141E57FE56000E7344 /* LDSegmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDSegmentCell.m; sourceTree = "<group>"; };
-		9197E5161E57FF61000E7344 /* LDSegmentFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDSegmentFile.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		911DA6D21E5ED8F300CECD06 /* LDSegmentView */ = {
+			isa = PBXGroup;
+			children = (
+				911DA6D51E5ED93F00CECD06 /* LDSegmentView.h */,
+				911DA6D61E5ED93F00CECD06 /* LDSegmentView.m */,
+			);
+			path = LDSegmentView;
+			sourceTree = "<group>";
+		};
 		9197E4D31E568CC3000E7344 = {
 			isa = PBXGroup;
 			children = (
@@ -130,13 +135,9 @@
 		9197E50C1E56F4DC000E7344 /* LZSegmentViewController */ = {
 			isa = PBXGroup;
 			children = (
+				911DA6D21E5ED8F300CECD06 /* LDSegmentView */,
 				9197E50D1E56F522000E7344 /* LDSegmentViewController.h */,
 				9197E50E1E56F522000E7344 /* LDSegmentViewController.m */,
-				9197E5101E56F541000E7344 /* LDSegmentView.h */,
-				9197E5111E56F541000E7344 /* LDSegmentView.m */,
-				9197E5131E57FE56000E7344 /* LDSegmentCell.h */,
-				9197E5141E57FE56000E7344 /* LDSegmentCell.m */,
-				9197E5161E57FF61000E7344 /* LDSegmentFile.h */,
 			);
 			path = LZSegmentViewController;
 			sourceTree = "<group>";
@@ -245,9 +246,8 @@
 			files = (
 				9197E5061E569359000E7344 /* ContentViewController.m in Sources */,
 				9197E4E71E568CC3000E7344 /* ViewController.m in Sources */,
-				9197E5151E57FE56000E7344 /* LDSegmentCell.m in Sources */,
-				9197E5121E56F541000E7344 /* LDSegmentView.m in Sources */,
 				9197E50F1E56F522000E7344 /* LDSegmentViewController.m in Sources */,
+				911DA6D81E5ED93F00CECD06 /* LDSegmentView.m in Sources */,
 				9197E4E41E568CC3000E7344 /* AppDelegate.m in Sources */,
 				9197E4E11E568CC3000E7344 /* main.m in Sources */,
 			);
@@ -444,6 +444,7 @@
 				9197E5001E568CC4000E7344 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9197E5011E568CC4000E7344 /* Build configuration list for PBXNativeTarget "UIPageViewController-OCUITests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +453,7 @@
 				9197E5031E568CC4000E7344 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
