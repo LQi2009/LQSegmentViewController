@@ -16,7 +16,7 @@
 @property (nonatomic, strong) NSArray<NSString *> *segmentTitles;
 
 /**
- 包含的控制器
+ 包含的子控制器
  */
 @property (nonatomic, strong) NSArray<UIViewController *> *viewControllers;
 

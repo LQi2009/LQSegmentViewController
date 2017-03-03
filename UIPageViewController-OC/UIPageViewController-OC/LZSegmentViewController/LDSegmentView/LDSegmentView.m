@@ -15,6 +15,7 @@
 @property (nonatomic, strong) UIView *line;
 @property (nonatomic, copy) segmentBlock selectBlock;
 @end
+
 @implementation LDSegmentView
 
 + (instancetype)segmentViewWithDatas:(NSArray<NSString *> *)datas {
@@ -307,6 +308,7 @@ static CGFloat __fontSize = 12.0;
         _selectedColor = [UIColor redColor];
         _normalColor = [UIColor whiteColor];
         _fontSize = 12.0;
+        self.backgroundColor = [UIColor clearColor];
     }
     
     return self;

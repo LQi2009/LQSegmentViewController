@@ -119,6 +119,7 @@
     
     [self.view bringSubviewToFront:self.segmentView];
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -197,16 +198,15 @@
 // Sent when a gesture-initiated transition ends. The 'finished' parameter indicates whether the animation finished, while the 'completed' parameter indicates whether the transition completed or bailed out (if the user let go early).
 - (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray<UIViewController *> *)previousViewControllers transitionCompleted:(BOOL)completed {
     
-    NSLog(@"didFinishAnimating");
-    
-    NSLog(@"%d", completed);
     if (completed) {
         
         self.segmentView.selectedIndex = ld_currentIndex ;
-        
-        NSLog(@">>>>>>>>> %ld", (long)ld_currentIndex);
     }
+}
+
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
     
+//    [self.segmentView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
